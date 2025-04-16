@@ -1,5 +1,7 @@
 # Workshop: Prompt Engineering and Fine-Tuning for AI Scenarios
 
+**I have used Huggingface AI platform for the assignment. I have generated API token.**
+
 ## Scenario 1 : HR Chatbot for CV Review and Feedback
 
 ### System Instructions:
