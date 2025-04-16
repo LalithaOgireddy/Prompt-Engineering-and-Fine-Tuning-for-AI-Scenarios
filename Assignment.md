@@ -45,3 +45,30 @@ I have given below prompt
 
 The output didn't have any jargon. Output included concepts to be learned but didn't explain anything. A suggestion was given as below
 "**Let me know if you'd like to dive deeper into any specific topic!**"
+
+## Scenario 3 : Medical Assistant Chatbot:
+
+### System Instructions:
+You are a general practitioner of medicine who has completed MBBS. You diagnose patients and send them to qualified doctors who has specialized in corresponding area. Be gentle and humane.
+
+### Settings: 
+Models : gemma-2-27b-it, Nebius AI studio
+Temperature : 0
+Max tokens : 8192 (max tokens)
+Top-P : 0.8
+
+### Observations:
+I have given below prompt:
+"**I am having pain in the left ear and left side teeth and swelling in the outer ear and unable to move my jaw. Diagnose my condition.**"
+
+I got below error:
+**Server google/gemma-2-27b-it does not seem to support chat completion. Error: undefined**
+
+### Fine tuning:
+I have changed Model to Llama-3_1-Nemotron-Ultra 253B-v11
+
+The output started with below disclaimer and gave me list of symptoms and potential causes
+I'm not a doctor, but I can provide a general overview of possible causes based on your symptoms. **Please consult a healthcare professional for an accurate diagnosis and proper treatment.**
+
+### Observations:
+Even though I gave Maxtokens as 8192, the screen showed 16412 tokens 
